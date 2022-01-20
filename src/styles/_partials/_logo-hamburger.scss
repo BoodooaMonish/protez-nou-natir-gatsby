@@ -1,0 +1,22 @@
+@use "./variables" as variables;
+
+.hamburger__bar {
+  fill: variables.$color-primary-light;
+  transition: transform 100ms linear;
+}
+button:hover .hamburger__bar {
+  fill: variables.$color-primary-dark;
+}
+button:focus .hamburger__bar {
+  fill: variables.$color-primary-dark;
+}
+
+button[aria-expanded="true"] .hamburger__bar_top {
+  transform: translate(25%, 10%) rotate(45deg);
+}
+button[aria-expanded="true"] .hamburger__bar_bottom {
+  transform: translate(-45%, 25%) rotate(-45deg);
+}
+button[aria-expanded="true"] .hamburger__bar_middle {
+  opacity: 0;
+}

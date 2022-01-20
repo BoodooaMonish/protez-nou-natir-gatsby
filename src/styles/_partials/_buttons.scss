@@ -1,0 +1,32 @@
+@use "./variables" as variables;
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  border: none;
+  &_secondary {
+    background-color: variables.$color-primary-light;
+    color: variables.$color-primary-dark;
+    &:hover {
+      background-color: variables.$color-secondary;
+      color: variables.$color-primary-light;
+    }
+    &:focus {
+      background-color: variables.$color-secondary-light;
+      color: variables.$color-primary-dark;
+    }
+  }
+  &_primary {
+    background-color: variables.$color-primary;
+    color: variables.$color-primary-light;
+    &:hover {
+      background-color: variables.$color-primary-dark;
+      color: variables.$color-primary-light;
+    }
+    &:focus {
+      background-color: variables.$color-secondary;
+      color: variables.$color-primary-light;
+    }
+  }
+}

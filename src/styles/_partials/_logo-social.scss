@@ -1,0 +1,9 @@
+@use "./variables" as variables;
+
+.logo__social {
+  width: 1.5rem;
+  height: 1.5rem;
+  &__white {
+    fill: white;
+  }
+}

@@ -1,0 +1,19 @@
+@use "./variables" as variables;
+
+.recentArticles {
+  margin: 0 auto;
+  max-width: variables.$max-width;
+  padding-top: variables.$main-padding-top;
+  &__heading {
+    margin: 2rem 0;
+    color: variables.$color-primary;
+    text-align: center;
+  }
+  &__btn {
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+}

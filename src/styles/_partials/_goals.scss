@@ -1,0 +1,66 @@
+@use "./variables" as variables;
+
+.goals {
+  margin: 0 auto;
+  max-width: variables.$max-width;
+  padding-top: variables.$main-padding-top * 3;
+  &__heading {
+    margin: 2rem 0;
+    color: variables.$color-primary;
+    text-align: center;
+  }
+  &__cards {
+    flex-direction: column;
+    &__card {
+      transition: all 300ms ease;
+      max-width: 70%;
+      flex-direction: row;
+      align-self: flex-end;
+      padding-bottom: 0;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-lg) {
+  .goals {
+    &__cards {
+      &__card {
+        max-width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: variables.$breakpoint-md) {
+  .goals {
+    &__cards {
+      &__card {
+        max-width: 90%;
+        align-self: center;
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-sm) {
+  .goals {
+    &__cards {
+      &__card {
+        flex-direction: column;
+        max-width: 70%;
+
+        padding-bottom: 1rem;
+        &:nth-child(even) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

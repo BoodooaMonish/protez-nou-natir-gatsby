@@ -1,0 +1,25 @@
+@use "./variables" as variables;
+
+.logo__company {
+  width: 100px;
+  height: 25px;
+  filter: drop-shadow(0 0.1rem 0.1rem variables.$color-primary-dark);
+  &_big {
+    width: 400px;
+    height: 100px;
+  }
+  &__white {
+    fill: variables.$color-primary-light;
+  }
+  &__color {
+    fill: variables.$color-primary-dark;
+  }
+}
+
+@media (max-width: variables.$breakpoint-sm) {
+  .logo__company {
+    &_big {
+      width: 100%;
+    }
+  }
+}

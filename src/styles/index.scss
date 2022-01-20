@@ -1,0 +1,186 @@
+@use "./_partials/variables" as variables;
+
+//normalize.css
+main {
+  display: block;
+}
+a {
+  background-color: transparent;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+//my defaults
+// font styles
+@font-face {
+  font-family: "nimbus";
+  src: url("../fonts/NimbusSanL-Reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nimbus";
+  src: url("../fonts/NimbusSanL-Bol-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "nimbus", sans-serif, serif;
+  font-size: variables.$fnt-size-400;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1rem;
+  font-size: variables.$fnt-size-400;
+}
+input {
+  font-size: variables.$fnt-size-400;
+  font-family: "nimbus", sans-serif, serif;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+}
+
+button {
+  font-size: variables.$fnt-size-400;
+  cursor: pointer;
+  line-height: 1rem;
+  font-family: "nimbus", sans-serif, serif;
+}
+
+h1 {
+  font-size: variables.$fnt-size-800;
+}
+
+h2 {
+  font-size: variables.$fnt-size-600;
+}
+
+h3 {
+  font-size: variables.$fnt-size-500;
+}
+
+h4 {
+  font-size: variables.$fnt-size-400;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  color: variables.$color-primary-dark;
+}
+
+//imports
+@import "./_partials/wrapper";
+@import "./_partials/buttons";
+@import "./_partials/footer";
+@import "./_partials/image-menu";
+@import "./_partials/logo-hamburger";
+@import "./_partials/logo-company";
+@import "./_partials/navigation";
+@import "./_partials/background";
+@import "./_partials/hero";
+@import "./_partials/cards";
+@import "./_partials/goals";
+@import "./_partials/causes";
+@import "./_partials/recentArticles";
+@import "./_partials/newsletter";
+@import "./_partials/logo-social";
+@import "./_partials/about";
+@import "./_partials/articles";
+@import "./_partials/notFound";
+@import "./_partials/logo-lock";
+@import "./_partials/logo-paypal";
+@import "./_partials/logo-visa";
+@import "./_partials/logo-mastercard";

@@ -1,0 +1,109 @@
+@use "./variables" as variables;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  &__copyright {
+    margin: 0 auto;
+    text-align: center;
+    color: variables.$color-primary-light;
+    margin-top: 0.7rem;
+  }
+  &__container {
+    margin: 0 auto;
+    max-width: variables.$max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  &__address {
+    flex-basis: 32%;
+    & > * {
+      color: variables.$color-primary-light;
+      display: block;
+      margin: 0.3rem 0;
+      text-align: center;
+    }
+    & > h3 {
+      margin: 0;
+    }
+    & > svg {
+      margin: 1rem auto;
+    }
+  }
+  &__nav {
+    flex-basis: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &__heading {
+      color: variables.$color-primary-light;
+      margin: 0.3rem 0;
+      text-align: center;
+    }
+    &__links {
+      flex-basis: 49%;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+    &__link {
+      color: variables.$color-primary-light;
+      text-align: center;
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+    &__social-links {
+      flex-basis: 49%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & > .footer__nav__heading {
+        margin: 0.7rem;
+        flex-basis: 100%;
+      }
+    }
+    &__social-link {
+      font-size: 0;
+      margin-top: -2rem;
+      color: variables.$color-primary-light;
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-sm) {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+    &__nav {
+      margin-top: 1rem;
+      &__link {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      &__social-links {
+        & > .footer__nav__heading {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

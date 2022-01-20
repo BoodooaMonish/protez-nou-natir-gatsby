@@ -1,0 +1,34 @@
+@use "./variables" as variables;
+
+.hero {
+  margin: 0 auto;
+  max-width: variables.$max-width;
+  padding-top: variables.$main-padding-top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  &__heading {
+    margin: 0;
+    color: variables.$color-primary-light;
+    text-align: center;
+  }
+  &__text {
+    margin: 0.3rem 0;
+    color: variables.$color-primary-light;
+    text-align: center;
+    font-size: variables.$fnt-size-500;
+  }
+  &__btn {
+    margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 637px) {
+  .hero {
+    &__heading {
+      font-size: 3rem;
+    }
+  }
+}

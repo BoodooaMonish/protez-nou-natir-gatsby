@@ -1,0 +1,76 @@
+@use "./variables" as variables;
+
+.cards {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  &__card {
+    background-color: variables.$color-primary-light;
+    position: relative;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 5px -1px variables.$color-primary;
+    overflow: hidden;
+    flex-basis: 23%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    transition: flex-basis 200ms ease;
+    &__container {
+      overflow: hidden;
+      padding: 0 0.7rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    &__aside {
+      overflow: hidden;
+      height: 18rem;
+      width: 100%;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+    &__heading {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-lg) {
+  .cards {
+    justify-content: space-around;
+    &__card {
+      flex-basis: 40%;
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-sm) {
+  .cards {
+    &__card {
+      flex-basis: 70%;
+    }
+  }
+}
