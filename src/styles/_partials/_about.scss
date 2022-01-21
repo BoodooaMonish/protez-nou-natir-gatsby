@@ -34,7 +34,8 @@
     }
     &__aside {
       flex-basis: 30%;
-      height: 100%;
+      height: inherit;
+      align-self: stretch;
     }
   }
 }

@@ -24,22 +24,22 @@ export default function AboutUs() {
         <Goal
           title="Save Environment"
           text="Curabitur dignissim quam ut leo aliquam maximus. In cursus libero diam, sollicitudin finibus magna scelerisque a. Nulla tristique ex eget diam venenatis condimentum non vel libero. Aliquam erat volutpat. Praesent eu finibus felis, ut blandit augue. Ut in nibh erat. Donec odio metus, commodo nec justo at, commodo sagittis elit. Nulla non auctor sapien. Pellentesque tristique mi lacus, nec accumsan est pulvinar nec."
-          image="/environment.jpg"
+          image="//images.ctfassets.net/kkemqa78y6pu/7ltZTYjXNWXqIVImIO1Dhm/f6ba7641c215ad63a9e19ec4fb2168a8/pexels-matthew-montrone-1179229.jpg"
         />
         <Goal
           title="Inform Public"
           text="Curabitur dignissim quam ut leo aliquam maximus. In cursus libero diam, sollicitudin finibus magna scelerisque a. Nulla tristique ex eget diam venenatis condimentum non vel libero. Aliquam erat volutpat. Praesent eu finibus felis, ut blandit augue. Ut in nibh erat. Donec odio metus, commodo nec justo at, commodo sagittis elit. Nulla non auctor sapien. Pellentesque tristique mi lacus, nec accumsan est pulvinar nec. Duis imperdiet porttitor elit, in iaculis dolor pellentesque eget. Vestibulum at elementum libero, vel scelerisque sem. Vestibulum congue massa eget magna commodo, eu maximus quam ullamcorper."
-          image="/public.jpg"
+          image="//images.ctfassets.net/kkemqa78y6pu/2YrgpeYs25QHBeWYhpdemD/4cccdf52d134ab2c48954f25da7b0c87/pexels-hert-niks-3224225.jpg"
         />
         <Goal
           title="Stop Pollution"
           text="Curabitur dignissim quam ut leo aliquam maximus. In cursus libero diam, sollicitudin finibus magna scelerisque a. Nulla tristique ex eget diam venenatis condimentum non vel libero. Aliquam erat volutpat. Praesent eu finibus felis, ut blandit augue. Ut in nibh erat. Donec odio metus, commodo nec justo at, commodo sagittis elit. Nulla non auctor sapien. Pellentesque tristique mi lacus, nec accumsan est pulvinar nec. Duis imperdiet porttitor elit, in iaculis dolor pellentesque eget. Vestibulum at elementum libero, vel scelerisque sem. Vestibulum congue massa eget magna commodo."
-          image="/pollution.jpg"
+          image="//images.ctfassets.net/kkemqa78y6pu/4vZoQSsfM1nGHcKLVduftn/f9111f356468f8d4a3090369c3e0c4b5/pexels-chris-leboutillier-929385.jpg"
         />
         <Goal
           title="Fight Global Warming"
           text="Curabitur dignissim quam ut leo aliquam maximus. In cursus libero diam, sollicitudin finibus magna scelerisque a. Nulla tristique ex eget diam venenatis condimentum non vel libero. Aliquam erat volutpat. Praesent eu finibus felis, ut blandit augue. Ut in nibh erat. Donec odio metus, commodo nec justo at, commodo sagittis elit. Nulla non auctor sapien. Pellentesque tristique mi lacus, nec accumsan est pulvinar nec. Duis imperdiet porttitor elit, in iaculis dolor pellentesque eget. Vestibulum at elementum libero, vel scelerisque sem."
-          image="/warming.jpg"
+          image="//images.ctfassets.net/kkemqa78y6pu/4FTDhCnxUbndgasMA7DWBy/7d2c529979482ce650fe3daa0f9a1a6b/pexels-landon-parenteau-6554499.jpg"
         />
       </div>
     </article>
