@@ -2,9 +2,18 @@
 
 > 'Protez Nou Natir' is a fundraising blog website with the goal of protecting nature by accumulating funds for particular causes while also reporting its activities its blog section
 
+This website is current hosted at <https://protez-nou-natir-294a50.netlify.app/>
+
 ---
 
 **NOTE: This is a web development project from Boodooa Monish. Protez Nou Natir is a fictional entity and is meant to replicate a fundraising non-profit business.**
+
+---
+
+### HOW IT WORKS
+
+- [Gatsby](https://www.gatsbyjs.com/), a React-Based Static Site Generator is used to create static html pages based on each fundraising project and each blog article whose data is retrieved from [Contenful](https://www.contentful.com/), a headless content management system.
+- Each time, content is added/ modified in the CMS, it triggers a Webhook function which will rebuild the website with the latest/ newest content
 
 ---
 
