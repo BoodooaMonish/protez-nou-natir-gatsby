@@ -1,6 +1,6 @@
 ## Protez Nou Natir
 
-> 'Protez Nou Natir' is a fundraising blog website with the goal of protecting nature by accumulating funds for particular causes while also reporting its activities its blog section
+> 'Protez Nou Natir' is a fundraising blog and donation website with the goal of protecting nature by accumulating funds for particular causes while also reporting its activities through its blog section
 
 This website is current hosted at <https://protez-nou-natir-294a50.netlify.app/>
 
@@ -36,6 +36,7 @@ This website is current hosted at <https://protez-nou-natir-294a50.netlify.app/>
 - Donation Form
 - Newsletter Feature [NOT YET IMPLEMENTED]
 - Stripe and Paypal Checkout System [NOT YET IMPLEMENTED]
+- Sort Feature for Articles [NOT YET IMPLEMENTED]
 
 ### HOW TO LAUNCH PROJECT
 
@@ -48,6 +49,8 @@ cd protez-nou-natir-gatsby-master
 npm install
 ```
 
+**NOTE: After install, create a '.env' file to store the space id and access token of contentful**
+
 To run in hot module reloading mode:
 
 ```sh
@@ -59,6 +62,30 @@ To create a production build:
 ```sh
 npm run build
 ```
+
+---
+
+### Information on Photos Used
+
+All photos used in this project are royalty free images and were downloaded from [pexels](https://www.pexels.com/)and [pixabay](https://pixabay.com/).
+
+Here are the links:
+
+- <https://www.pexels.com/photo/close-up-photography-of-green-leafed-plants-1500523/>
+- <https://www.pexels.com/photo/person-holding-a-green-plant-1072824/>
+- <https://www.pexels.com/photo/scenic-view-of-mountain-1666021/>
+- <https://www.pexels.com/photo/busy-street-3224225/>
+- <https://www.pexels.com/photo/photography-of-factory-929385/>
+- <https://www.pexels.com/photo/wood-light-dawn-landscape-6554499/>
+- <https://www.pexels.com/photo/green-pine-trees-1179229/>
+- <https://www.pexels.com/photo/sea-nature-water-ocean-4603275/>
+- <https://pixabay.com/photos/forest-trees-tree-canopy-foliage-231066/>
+- <https://pixabay.com/photos/nature-rubbish-pollution-ecology-4202713/>
+- <https://www.pexels.com/photo/alternative-alternative-energy-clouds-countryside-414807/>
+- <https://www.pexels.com/photo/black-and-silver-solar-panels-159397/>
+- <https://www.pexels.com/photo/paper-cutouts-on-a-gray-surface-7048020/>
+- <https://www.pexels.com/photo/assorted-plastic-bottles-802221/>
+- <https://www.pexels.com/photo/photo-of-trash-lot-on-shore-2447036/>
 
 ---
 
